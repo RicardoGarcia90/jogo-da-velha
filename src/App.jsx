@@ -1,5 +1,5 @@
 function App() {
-  return <h1>Jogo da Velha</h1>;
+  return <p>Em breve...</p>;
 }
 
 export default App;
