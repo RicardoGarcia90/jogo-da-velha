@@ -4,8 +4,9 @@ const Player = ({ initialName, symbol }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [playerName, setPLayerName] = useState(initialName);
 
-  const handleEditPLayer = () => {
-    setIsEditing((editing) => !editing);
+  const handleEditPLayer = (event) => {
+    if (event.key === 'Enter' || event.type === 'click')
+      setIsEditing((editing) => !editing);
   };
 
   const handleChange = (event) => {
@@ -16,7 +17,13 @@ const Player = ({ initialName, symbol }) => {
 
   if (isEditing) {
     editablePlayerName = (
-      <input type="text" required value={playerName} onChange={handleChange} />
+      <input
+        type="text"
+        required
+        value={playerName}
+        onChange={handleChange}
+        onKeyDown={handleEditPLayer}
+      />
     );
   }
 
