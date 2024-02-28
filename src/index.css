@@ -81,7 +81,7 @@ h1 {
 
 #players.highlight-player li.active .player-name,
 #players.highlight-player li.active .player-symbol {
-  color: #f8dd0e;
+  color: red;
 }
 
 #players button {
@@ -151,7 +151,7 @@ ol {
 #pre-game button {
   cursor: pointer;
   background: none;
-  color: #f8c031;
+  color: red;
   border: none;
   font-family: 'Caprasimo', cursive;
   font-size: 4rem;
@@ -208,7 +208,7 @@ ol {
   font-family: 'Caprasimo', cursive;
   font-size: 4rem;
   text-align: center;
-  color: #fcd256;
+  color: red;
   margin: 0;
 }
 
@@ -322,15 +322,15 @@ ol {
 
 @keyframes pulse {
   0% {
-    border-color: #f6e35a;
-    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0.4);
+    border-color: rgb(248, 181, 181);
+    box-shadow: 0 0 0 0 rgb(248, 3, 3);
   }
   50% {
-    border-color: #f8c031;
+    border-color: rgb(255, 111, 111);
     box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
   }
   100% {
-    border-color: #f6e35a;
+    border-color: red;
     box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
   }
 }
